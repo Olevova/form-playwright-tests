@@ -1,26 +1,44 @@
 # Requirements:
-NodeJS 18.12  
+- Node.js v20.5.1 or later
+- Playwright v1.53.2 (installed via npm)
 
 # Installation  
-`npm install`
+```bash
+npm install
+```
 
-# Start a server  
-`npm run serve`
+# Start the application server  
+```bash
+npm run serve
+```
+This will start the application on http://localhost:3000
 
-# To run tests  
-`npm run test`
+# Running tests  
+```bash
+npm run test          # Run tests in headless mode
+npm run test:ui       # Run tests with UI mode
+```
 
 # Assignment  
-Congratulations! You just got hired to your first unicorn startup company.  
-Your new company just finished developing the latest feature called "Your average form".  
+This project contains a simple form application called "Your average form".  
 ![Your average form image](public/webpage.jpg)  
-Your task is to to cover "Your average form" with automated tests using [Cypress.io](https://cypress.io).  
-Here's a general TODO list:
-- explore "Your average form" webpage
-- create testing scenarios
-- create tests for those scenarios
+Your task is to cover this form application with automated tests using [Playwright](https://playwright.dev/).  
 
-Although the assignment is small, it doesn't mean your code quality can be poor.  
-Make sure to format your code properly and use the page object pattern.  
+## Project Structure
+- `app/` - Contains the application code
+  - `index.html` - The form page
+  - `index.js` - The Express server
+  - `results.ejs` - The results page template
+- `tests/` - Contains the test files
+  - `index.spec.js` - Basic test file to get started
+
+## Testing Requirements
+Please complete the following tasks:
+- Explore the "Your average form" application
+- Create comprehensive testing scenarios
+- Implement tests for those scenarios using Playwright
+- Implement the Page Object Pattern for better test structure
+
+Although the application is simple, please ensure high-quality code with proper formatting and organization.
 
 Good luck and have fun!
