@@ -13,7 +13,23 @@ This project contains end-to-end automated tests for a simple form application u
   - `index.js` - The Express server
   - `results.ejs` - The results page template
 - `tests/` - Contains the test files
-  - `index.spec.js` - Basic test file to get started
+  - `ui.spec.ts` - UI/UX tests 
+  - `navigation.spec.ts` - Navigation tests 
+  - `formSubmissionValid.spec.ts` - Positive form submission tests with varying hobby  selection
+  - `formSubmissionInvalid.spec.ts` - Negative validation tests for missing required fields
+- `fixtures/`- Custom Playwright fixtures
+  - `testFixtures.ts` - Defines formPage and resultPage fixtures
+- `utils/` - Helper functions for common UI actions
+  - `commonUtils.ts` - Utilities for handling dropdowns, checkboxes...
+- `date/` - Test data generation utilities
+  - `formDate.ts` - Functions to generate valid and invalid FormData
+- `snapshots/` - Stores ARIA snapshots used in UI tests
+  - `snapshots.ts` - The serialized ARIA snapshot of the form
+- `pages/` - Page Object Model files
+  - `form.page.ts` - FormPage class
+  - `result.page.ts` - ResultPage class
+-  `types/` - Shared TypeScript type definitions
+  - `types.ts` - FormData interface 
 
 ## Test Scenarios
 
