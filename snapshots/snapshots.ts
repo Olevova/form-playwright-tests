@@ -1,0 +1,37 @@
+export const FORM_PAGE_ARIA_SNAPSHOT = `
+      - heading "Your average form" [level=1]
+      - text: "Username:"
+      - textbox "Username:"
+      - text: "Password:"
+      - textbox "Password:"
+      - text: "Gender:"
+      - radio "Male"
+      - text: Male
+      - radio "Female"
+      - text: "Female Hobbies:"
+      - table:
+        - rowgroup:
+          - row "Hobby Select":
+            - columnheader "Hobby"
+            - columnheader "Select"
+        - rowgroup:
+          - row "Reading":
+            - cell "Reading"
+            - cell:
+              - checkbox
+          - row "Sports":
+            - cell "Sports"
+            - cell:
+              - checkbox
+          - row "Music":
+            - cell "Music"
+            - cell:
+              - checkbox
+      - text: "Time:"
+      - combobox "Time:":
+        - option "Select a time" [selected]
+        - option "Morning"
+        - option "Noon"
+        - option "Evening"
+      - button "Submit"
+      `
