@@ -67,7 +67,8 @@ UI/UX and ARIA structure checks:
 
 ```bash
 npm install
-# npm run serve    # Starts the app on http://localhost:3000
+npx playwright install   # Required: downloads browsers needed for running tests 
+# npm run serve    # Starts the app on http://localhost:3000 
 npm run test     # Runs all Playwright tests
 npm run test:ui  # Opens the Playwright UI
 npm run report # Open report

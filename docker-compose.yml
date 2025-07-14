@@ -1,4 +1,3 @@
-version: '3.9'
 services:
   playwright-tests:
     image: olevova1983/unumed:latest
